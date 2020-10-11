@@ -7,4 +7,8 @@ The purpose of this assignment was to get familiar with the PyTorch library. The
 
 
 ## Homework 2
-Assignment 2 involved the exploration of the Word2Vec model on our choise (CBOW in my case). After 10 epochs my Negative Log Likelihood loss was around 6706. Below is a visualization of 300 words vector representations. ![](./assets/word2vec.png)
+Assignment 2 involved the exploration of the Word2Vec model on our choise (CBOW in my case). After 10 epochs my Negative Log Likelihood loss was around 6706. Below is a visualization of 300 words vector representations. 
+
+<p align="center">
+  <img src="./assets/word2vec.png" />
+</p>
