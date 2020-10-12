@@ -15,3 +15,6 @@ Assignment 2 involved the exploration of the Word2Vec model on our choice (CBOW 
 
 ## Homework 3
 The task was composed of two parts. In part one, it was needed to code a character-based language model with recurrent (GRU) neural network architecture. And part two consisted of an exploration of different model architectures for text classification task (models used: bidirectional LSTM, bidirectional two-layer LSTM, few Convolutional neural networks)
+
+
+## Project
