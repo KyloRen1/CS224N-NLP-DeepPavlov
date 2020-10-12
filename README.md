@@ -18,3 +18,22 @@ The task was composed of two parts. In part one, it was needed to code a charact
 
 
 ## Project
+
+### Multilingual-BERT for text classification
+__1. Data__ 
+For my experiments I have taken 2 datasets: [RuTweetCorp](https://study.mokoron.com/) and [Kaggle: Twitter Sentiment Analysis](https://www.kaggle.com/c/twitter-sentiment-analysis2/data). Russian dataset consists of 114 911 positive and 111 923 negative tweets. English dataset consists of 56 457 positive and 43 532 negative tweets.
+
+__2. Experiment setup__
+The purpose of these experiments was to explore whether multilingual-BERT model can transfere knowledge from one language to another on classification task. So, first step of fine-tuning was done on English dataset (99 989 samples), following with fine-tuning on train split of Russian data (181 467 samples). Below you can see the table of classification metrics on test split (22 684 samples).
+
+Model | Accuracy | Precision | Recall | F1
+------|----------|-----------|--------|-------
+Raw M-BERT | 49.5% | 49.5% | 99.9% | 66.2%
+MBERT-Ru | 99.9% | 99.9% | 99.9%| 99.9 % 
+MBERT-En | 75.7% | 73.4% | 79.8% | 76.5%
+MBERT-En-Ru | 99.9% | 100% | 99.9% | 99.9%
+Raw RuBERT | 50.0% | 70.8% | 1% | 3% 
+RuBERT | 99.9% | 100% | 99.8% | 99.9%
+	
+	
+### Multilingual-BERT for Boolean Questions
