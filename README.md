@@ -7,11 +7,11 @@ The purpose of this assignment was to get familiar with the PyTorch library. The
 
 
 ## Homework 2
-Assignment 2 involved the exploration of the Word2Vec model on our choice (CBOW in my case). After 10 epochs my Negative Log-Likelihood loss was around 6706. Below is a visualization of 300 words vector representations. 
+Assignment 2 involved the exploration of the Word2Vec model on our choice (CBOW in my case). After 10 epochs my Negative Log-Likelihood loss was around 6706. Below is a visualization of 300 words vector representations
 
 <p align="center">
   <img src="./assets/word2vec.png" />
 </p>
 
 ## Homework 3
-The task was to code and to train our models with different character-based language model with recurrent (GRU) neural network architecture.
+The task was composed of two parts. In part one, it was needed to code a character-based language model with recurrent (GRU) neural network architecture. And part two consisted of an exploration of different model architectures for text classification task (models used: bidirectional LSTM, bidirectional two-layer LSTM, few Convolutional neural networks)
