@@ -44,7 +44,7 @@ Laking Russian BoolQ training data we have taken data that relates to a similar 
 
 __2. Experiment setup__
 We have tried to train and evaluate two models: <br>
-	- Fine-tune the RuBERT model on the Russian NLI dataset and evaluate it on Russian Bool Questions
+	- Fine-tune the RuBERT model on the Russian NLI dataset and evaluate it on Russian Bool Questions <br>
 	- Fine-tune Multilingual-BERT on English Bool Questions and evaluate the trained model on Russian Bool Questions
 Results of the experiments are presented in a table below
 
