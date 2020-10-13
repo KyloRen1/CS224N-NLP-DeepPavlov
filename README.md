@@ -44,12 +44,17 @@ Laking Russian BoolQ training data we have taken data that relates to a similar 
 
 __2. Experiment setup__
 We have tried to train and evaluate two models: <br>
-	- Fine-tune the RuBERT model on the Russian NLI dataset and evaluate it on Russian Bool Questions <br>
-	- Fine-tune Multilinagual-BERT on ... 
-	- Fine-tune Multilingual-BERT on English Bool Questions and evaluate the trained model on Russian Bool Questions <br>
+	- Fine-tune Multilingual-BERT on English Bool Questions and evaluate on Russian Bool Questions<br>
+	- First fine-tune of Multilingual-BERT on English Bool Questions, second fine-tune on Russian Bool Questions <br>
+	- Fine-tune of Multilingual-BERT on Russian NLI dataset and second fine-tune on Russian Bool Questions <br>
+	- Fine-tune of Multilingual-BERT on Russian NLI dataset and evaluate on Russian Bool Questions<br>
 Results of the experiments are presented in a table below
 
  Model | Accuracy | Precision | Recall | F1
  ------|----------|-----------|--------|---------- 
- RuBERT-NLI_Ru | 39.2% | 32.6% | 84.9% | 47.1%
- MBERT-BoolQ_En | 31.9% | 31.9% | 1.0% | 48.3%  
+ M-BERT En-BoolQ |  31.9% | 31.9% | 100% |  48.3%
+ M-BERT En-BoolQ; Ru-BoolQ | 73.8% | 74.5% | 98.6% | 84.9% 
+ M-BERT Ru-NLI; Ru-BoolQ | 74.5% | 74.5% | 100% | 85.4% 
+ Ru-BERT Ru-NLI | 39.2% | 32.6% | 84.9% | 47.1% 
+ 
+ From the table above we can see that models that were not fine-tuned on Russian Boolean Questions perform poorly, comparing to those that did.
