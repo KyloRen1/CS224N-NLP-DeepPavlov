@@ -1,4 +1,4 @@
-# CS_224N_NLP-Course
+# CS224N-NLP
 
 This repository contains homework and the final project of DeepPavlov Deep Learning for the NLP course.
 
