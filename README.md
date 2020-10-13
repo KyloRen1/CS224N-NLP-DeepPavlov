@@ -38,8 +38,9 @@ RuBERT | 99.9% | 100% | 99.8% | 99.9%
 	
 ### Multilingual-BERT for Boolean Questions
 Another task that we have tried to explore was Bool Question Answering. The obvious solution was to formulate this task as a binary classification. 
+
 __1. Data__
-Laking Russian BoolQ training data we have taken data that relates to a similar task - Natural Language Inference [Data source](https://github.com/facebookresearch/XNLI). As NLI has 3 target classes - 'contradiction', 'neutral', 'entailment' we have tried different types of mapping for binary classification. The first approach was to map 'contradiction' and 'neutral' to 0 and 'entailment' to 1. The second approach was to remove 'neutral' samples from the dataset. 
+Laking Russian BoolQ training data we have taken data that relates to a similar task - Natural Language Inference [[Data source]](https://github.com/facebookresearch/XNLI). As NLI has 3 target classes - 'contradiction', 'neutral', 'entailment' we have tried different types of mapping for binary classification. The first approach was to map 'contradiction' and 'neutral' to 0 and 'entailment' to 1. The second approach was to remove 'neutral' samples from the dataset. 
 
 __2. Experiment setup__
 We have tried to train and evaluate two models: <br>
